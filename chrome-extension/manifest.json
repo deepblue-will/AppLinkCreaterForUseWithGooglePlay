@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 
 	"name": "Create Android App Link",
-	"description": "Androidアプリへのリンクを生成します。Google Playのアプリ画面で実行すると、決められたフォーマットをクリップボードに入れます。",
+	"description": "アイコン付きAndroidアプリリンクタグを生成します。Google Playのアプリ画面で実行すると、決められたフォーマットをクリップボードにコピーします。",
 	"version": "1.0",
 	"options_page": "html/option_page.html",
 	"page_action": {
