@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+
+	"name": "Create Android App Link",
+	"description": "Androidアプリへのリンクを生成します。Google Playのアプリ画面で実行すると、決められたフォーマットをクリップボードに入れます。",
+	"version": "1.0",
+	"options_page": "html/option_page.html",
+	"page_action": {
+		"default_icon": "img/android16.png",
+		"default_title": "タグを生成"
+	},
+	"background": {
+		"page": "html/background.html",
+		"persistent": false
+	},
+	"permissions": ["tabs"],
+	"content_scripts": [
+		{
+			"matches": ["https://play.google.com/store/apps/detail*"],
+			"js": ["js/jquery.js", "js/content_script.js"],
+			"css": ["css/injection.css"],
+			"run_at": "document_end"
+		}
+	],
+	"icons": {
+		"16": "img/android16.png",
+		"48": "img/android48.png",
+		"128": "img/android128.png"
+	}
+}
