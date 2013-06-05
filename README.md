@@ -1,4 +1,4 @@
-# CreateAAppLink
+# App Link Creater for use with Google Play™
 Androidアプリへのリンクを生成するChrome 拡張。Google Play上で動作します。
 
 # 使い方
