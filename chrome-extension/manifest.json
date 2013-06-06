@@ -6,7 +6,7 @@
 	"version": "1.0",
 	"options_page": "html/option_page.html",
 	"page_action": {
-		"default_icon": "img/android16.png",
+		"default_icon": "img/icon16.png",
 		"default_title": "タグを生成"
 	},
 	"background": {
@@ -23,8 +23,8 @@
 		}
 	],
 	"icons": {
-		"16": "img/android16.png",
-		"48": "img/android48.png",
-		"128": "img/android128.png"
+		"16": "img/icon16.png",
+		"48": "img/icon48.png",
+		"128": "img/icon128.png"
 	}
 }
