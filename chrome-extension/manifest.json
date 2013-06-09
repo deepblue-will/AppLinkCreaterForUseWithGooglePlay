@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 
 	"name": "App Link Creater for use with Google Play™",
-	"description": "アイコン付きAndroidアプリリンクタグを生成します。Google Playのアプリ画面で実行すると、決められたフォーマットをクリップボードにコピーします。",
+	"description": "アイコン付きのAndroid™アプリリンクを生成する拡張機能です。Google Play™上で動作します。",
 	"version": "1.0",
 	"options_page": "html/option_page.html",
 	"page_action": {
