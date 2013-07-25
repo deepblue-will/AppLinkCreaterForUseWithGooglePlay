@@ -1,10 +1,15 @@
 $(function(){
-	var app_name = $("h1.doc-banner-title").text();
-	var created_by = $(".doc-header-link").text();
-	var img_url = $(".doc-banner-icon img").attr("src");
-	var rating = $(".average-rating-panel .average-rating-value").html();
-	var votes = $(".average-rating-panel .votes").html();
-	var price = $("dd[itemprop='offers']").text();
+	var app_name = $(".document-title > div").text();
+	var created_by = $("a.document-subtitle.primary").text();
+	var img_url = $("img.cover-image").attr("src");
+	var rating = $("[itemprop=ratingValue]").attr("content");
+	var votes = $("[itemprop=ratingCount]").attr("content");
+	var price = $("[itemprop=price]")
+	
+	// ダウンロード済みの有料アプリは価格が表示されない
+	if(price){
+		price = price.attr("content");
+	}
 	
 	var app_data = {
 		"app_name": app_name,
